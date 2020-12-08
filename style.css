@@ -1,0 +1,86 @@
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic);*/
+@import "font.css";
+/*Universal*/
+body {margin: 0; font: 400 14px Open Sans, Arial, Helvetica, sans-serif; color: #4c4c4c; line-height: 1.9;}
+a {color: #2F80AB;}
+a:hover {color: #333;}
+.clearfix {clear: both;}
+.logo {display: block; margin: 20px auto 10px;}
+form {text-align: center;}
+textarea {font:400 Open Sans, Arial, Helvetica, sans-serif; color: #4c4c4c; font-size: 13px; padding: 0 15px; margin-bottom: 10px;}
+input[type="button"], input[type="submit"] {background-color: #00517B; border: 1px solid #00517B; border-radius: 4px; color: #fff; padding: 10px 20px; font-size: 13px; font-family: 'Open Sans', Arial, Helvetica, serif; text-transform: uppercase;
+    font-weight: 600;}
+input[type="button"]:hover, input[type="submit"]:hover {background-color: #333; border: 1px solid #333; cursor: pointer;}
+input.guest {background-color: #fff; color: #00517B;}
+input.guest:hover {color: #fff;}
+input.existing {text-transform: none;}
+
+/*Sign In Page*/
+.left-half, .right-half {display: block; position: relative; width: 45%; margin-top: 20px; border: 1px solid #DDD; text-align: center;}
+.left-half {float: left; margin-left: 2%;}
+.right-half {float: right; margin-right: 2%;}
+.left-half h3, .right-half h3 {background: #f9f9f9; width: 100%; text-align: center; margin-top: 0; padding: 10px 0;     border-bottom: 1px solid #DDD;}
+
+.login-fields {display: block; margin: 0 auto; width: 310px;}
+
+.login-fields .label {
+        font: 14px 'Open Sans', Arial, sans-serif;
+    float: left;
+    background: #2F80AB;
+    width: 70px;
+    padding: 10px 15px 10px 25px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 2px 0 0 2px;
+    position: relative;
+}
+
+.login-fields .label:after {
+    left: 100%;
+    top: 50%;
+    border: solid rgba(0, 0, 0, 0);
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.login-fields .label:after {
+        content: '';
+        display: inline-block;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #2F80AB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+
+.login-fields input {
+    float: left;
+    padding: 9px 8px 9px 25px;
+    font: 14px 'Open Sans', Arial, sans-serif;
+    color: #333;
+    width: 200px;
+    border-radius: 0px 2px 2px 0;
+    border: solid 1px #ccc;
+}
+
+.submit {clear: both;}
+.errormsg {ALIGN:center; FONT-WEIGHT:bolder; COLOR:#b00;}
+
+/*Status Popup*/
+.status-box {width: 100%;}
+.status-box h3 {background: #f9f9f9; width: 100%; text-align: center; margin-top: 0; padding: 10px 0; border-bottom: 1px solid #DDD;}
+.status-box .left, .status-box .right {display: block; position: relative; width: 45%; margin-top: 5px; text-align: left;}
+.status-box .left {float: left; margin-left: 2%;}
+.status-box .right {float: right; margin-right: 2%;}
+.disconnect {width: 100%; text-align: center; margin-top: 20px;}
+
+/*Responsive*/
+@media (max-width: 767px){
+        form, textarea {max-width: 100%;}
+        .left-half, .right-half {float: none; clear: both; width: 96%; margin: 0 auto 20px;}
+        .right-half {margin-bottom: 75px;}
+
+}
